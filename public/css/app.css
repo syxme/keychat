@@ -20,8 +20,22 @@
     border-left: solid 1px #555;
 
 }
+.keypress {
+  right: 137px;
+  display: none;
+  position: absolute;
+  top: -24px;
+  background-color: #CB2532;
+  padding: 5px;
+  color: #FFF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-* { margin: 0; padding: 0; box-sizing: border-box;  transition: all 0.2s linear;}
+* {  text-shadow: 0 0 2px #000; margin: 0; padding: 0; box-sizing: border-box;  transition: all 0.2s linear; }
 body { font: 13px Helvetica, Arial; background-color: #222;}
 form {
   background: #000;
@@ -34,11 +48,10 @@ form {
   background: #181818;
   padding: 1px;
   position: fixed;
-  bottom: 100px;
   width: 100%;
   border-top: 1px solid #181818;
-  bottom: 22px; 
-  height: 80px;
+  bottom: 7px; 
+  height: 95px;
 }
 .options-btn {
   position: absolute;
@@ -67,6 +80,13 @@ form textarea {
 form textarea:focus ~ form{
 
 }
+
+.timed {
+  position: absolute;
+  right: 3px;
+  top: 5px;
+  border-left: 1px solid #303030;
+}
 .green{
 	color: #00Ff00;
 }
@@ -94,8 +114,8 @@ form .btn:hover{
   background-color: #222;
   color: #EEE;
 }
-#messages div { padding: 5px 10px; }
-#messages div:nth-child(odd) { background: #181818;; }
+#messages .ms { padding: 5px 10px;position: relative; }
+#messages .ms:nth-child(odd) { background: #181818; }
 
 .enter-name{
   background-color: #121212;
@@ -112,11 +132,11 @@ form .btn:hover{
   width: 100%;
 }
 .button{
-	  color: #FFF;
-  height: 50px;
+	color: #FFF;
+  height: 65px;
   text-align: center;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 65px;
   font-size: 17px;
   background-color: #242424;
   cursor: pointer;
@@ -127,4 +147,11 @@ form .btn:hover{
 }
 .down{
 	height:100px;
+}
+a:hover {
+  color: #2EFF29;
+}
+a {
+  color: #A2A7FF;
+  text-decoration: none;
 }
