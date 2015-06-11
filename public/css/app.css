@@ -36,7 +36,7 @@
 }
 
 * {  text-shadow: 0 0 2px #000; margin: 0; padding: 0; box-sizing: border-box;  transition: all 0.2s linear; }
-body { font: 13px Helvetica, Arial; background-color: #222;}
+body { font: 13px Helvetica, Arial; background-color: #222; }
 form {
   background: #000;
   padding: 1px;
@@ -85,10 +85,11 @@ form textarea:focus ~ form{
   position: absolute;
   right: 3px;
   top: 5px;
-  border-left: 1px solid #303030;
+  color: #EF8545;
+  text-shadow: 0 0 3px #6C2703;
 }
 .green{
-	color: #00Ff00;
+  color: #00Ff00;
 }
 
 form .btn {
@@ -105,17 +106,17 @@ form .btn {
   cursor: pointer;
 }
 form .btn:hover{
-	background-color: #3C8FE0;
+  background-color: #3C8FE0;
 }
 #messages {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #222;
+  background-color: #1A1A1A;
   color: #EEE;
 }
-#messages .ms { padding: 5px 10px;position: relative; }
-#messages .ms:nth-child(odd) { background: #181818; }
+#messages .ms { padding: 2px 5px;position: relative; border-bottom: 1px solid #000000; border-top: 1px solid #3F3C3C; width: 100%; min-height: 83px;}
+#messages .ms:nth-child(odd) { background: #252525; }
 
 .enter-name{
   background-color: #121212;
@@ -128,11 +129,11 @@ form .btn:hover{
   color: #EEE;
   height: 26px;
   font-size: 17px;
-  border: 1px solid #272727;	
+  border: 1px solid #272727;  
   width: 100%;
 }
 .button{
-	color: #FFF;
+  color: #FFF;
   height: 65px;
   text-align: center;
   font-weight: bold;
@@ -142,11 +143,11 @@ form .btn:hover{
   cursor: pointer;
 }
 .button:hover{
-	background-color: #3C8FE0;
-	color: #111;
+  background-color: #3C8FE0;
+  color: #111;
 }
 .down{
-	height:100px;
+  height:100px;
 }
 a:hover {
   color: #2EFF29;
@@ -155,3 +156,48 @@ a {
   color: #A2A7FF;
   text-decoration: none;
 }
+
+.msg {
+  margin-left: 55px;
+}
+.user{
+  float: left;
+  width: 100%;
+  padding-bottom: 2px;
+}
+
+.icon{
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-image: url('../media/icons.png');
+  background-size: 900px;
+}
+.icon.x1{
+  background-position: 0px 0px;
+}
+.icon.x2{
+  background-position: -50px 0px;
+}
+.icon.x3{
+  background-position: -100px 0px;
+}
+.icon.x4{
+  background-position: -150px 0px;
+}
+.icon.x5{background-position: -200px 0px;}
+.icon.x6{background-position: -250px 0px;}
+.icon.x7{background-position: -300px 0px;}
+.icon.x8{background-position: -350px 0px;}
+.icon.x9{background-position: -400px 0px;}
+.icon.x10{background-position: -450px 0px;}
+.icon.x11{background-position: -500px 0px;}
+.icon.x12{background-position: -550px 0px;}
+.icon.x13{background-position: -600px 0px;}
+.icon.x14{background-position: -650px 0px;}
+.icon.x15{background-position: -800px 0px;}
+.icon.x16{background-position: -850px 0px;}
+.icon.x17{background-position: -50px -200px;}
+.icon.x18{background-position: -100px -200px;}
+.icon.x19{background-position: -150px -200px}
+.icon.x20{background-position: -200px -200px}

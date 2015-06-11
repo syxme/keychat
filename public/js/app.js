@@ -43,11 +43,14 @@ $(document).ready( function(){
 		}
 	}
 
+var sxx = 1;
 	function message(msg){
 		messagem.play();
 		var time = new Date();
 		time = time.getHours()+':'+time.getMinutes()+':'+time.getSeconds();
-		$('#messages').append('<div class="ms"><b style="color:'+msg.color+'">'+msg.name+': </b>'+msg.msg+'<div class="timed">'+time+'</div></div>');
+		var tpl_msg = '<div class="ms"><b  class="user"style="color:'+msg.color+'">'+msg.name+'</b><div class="icon x'+sxx+'"></div><div class="msg">'+msg.msg+'</div><div class="timed">'+time+'</div></div>'
+		sxx++;
+		$('#messages').append(tpl_msg);
        	scroll(0,document.body.scrollHeight);
 	}
 	var time_out_id = 0;
