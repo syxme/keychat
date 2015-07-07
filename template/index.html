@@ -2,22 +2,31 @@
 <html>
   <head>
     <title>Schat</title>
-    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/js/jquery.min.js"></script>
   	<script src="/socket.io/socket.io.js"></script>
     <script src="/js/app.js"></script>
     <link rel="stylesheet" href="/css/app.css" type="text/css">
 
   </head>
   <body>
-
     <div id="messages"></div>
 
     <div class="options">
       <div class="keypress"></div>
       <div class="options-btn">Options</div>
+      
       <div class="enter-name">
         <input name="chat-name" id="chat_name"/>
         <div class="button rename">Rename</div>
+      </div>
+      
+      <div class="change-icon">
+        <div class='block'>
+          <span class='left-btn left'></span>
+          <div class="icon x1"></div>
+          <span class='left-btn right'></span>
+        </div>
+        <div class="button saveIcon">Save</div>
       </div>
     </div>
 
