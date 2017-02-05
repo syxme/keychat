@@ -66,7 +66,7 @@ var Socket = function (http){
 			client.emit('event',{evn:11,history_ms:history_ms});
 		}
 		client.emit('user_info',client.user);
-		client.emit('event', {evn:'2',name:"Помошник хуев",msg:'Вы можете чатиться, /list узнать есть ли кто нить в чате<br> Для полного кайфа нажми на на F11. <br>'+
+		client.emit('event', {evn:'2',name:"Помошник хуев",msg:'Вы можете чатиться, /list узнать есть ли кто нить в чате<br>/room имя_комнаты перейти в другую комнату <br> Для полного кайфа нажми на на F11. <br>'+
 		'Сейчас в комнете:<br>'+postOnlineUsers(client.id,client.user.room),color:'#EF8545',time:'NOW'});
 		send('event',{evn:2,color:'#EF8545',name:"BOT",msg:'В комнату зашел новый человек под именем '+client.user.name});
 
@@ -115,7 +115,7 @@ var Socket = function (http){
 				}
 				if (client.user.room=='')
 					history_ms.push(msq);
-				if (history_ms.length>100)history_ms.shift();
+				if (history_ms.length>500)history_ms.shift();
 				io.sockets.in(client.user.room).emit('chat message', msq);
 			}
 		});
